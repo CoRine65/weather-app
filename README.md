@@ -33,3 +33,11 @@ Goal of this lesson is to use asynchronous code to fetch and interact with APIs 
 [ERROR]: get problem: trailing semicolon in the encryption of the API key.
 12. run npm start > npm run build
 ------------ commit : build ----------
+
+13. Display plain weather information
+14. Creating displays and inputs for custom weather information
+- updating the index.js to grab the containers and inputs
+- add event listener
+[Testing]: FAILED
+[ERROR]: did not update the URL.
+NOTE: be more thorough in reading. 
