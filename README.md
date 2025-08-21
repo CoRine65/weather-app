@@ -49,3 +49,9 @@ NOTE: be more thorough in reading.
 NOTE: felt off and inaccurate, 
 - added: requre City, State and Country
 - display what the API is sending back
+----------- Commit -------------------
+16. Showing extra weather details: humidity, wind, feels-like
+- weather icons
+- keeping display clean and readable
+17. Adding some styling
+----- commit ----------------------------

@@ -40,10 +40,19 @@ async function getWeather(location = 'New York, NY') {
     }
 
     const data = await response.json();
+    const current = data.currentConditions;
     console.log('Weather data:', data);
 
-    //display weather: 
-    weatherContainer.textContent = `Weather in ${data.resolvedAddress}: ${data.currentConditions.temp}°F, ${data.currentConditions.conditions}`;
+    //display weather: amazing!! 
+    weatherContainer.innerHTML = `
+      <h2>Weather in ${data.resolvedAddress}</h2>
+      <p><strong>${current.temp}°F</strong> — ${current.conditions}</p>
+      <p>Feels like: ${current.feelslike}°F</p>
+      <p>Humidity: ${current.humidity}%</p>
+      <p>Wind: ${current.windspeed} mph</p>
+      ${current.icon ? `<img src="https://raw.githubusercontent.com/VisualCrossing/WeatherIcons/main/PNG/1st%20Set%20-%20Color/${current.icon}.png" alt="${current.conditions}" />` : ''}
+    `;
+    //weatherContainer.textContent = `Weather in ${data.resolvedAddress}: ${data.currentConditions.temp}°F, ${data.currentConditions.conditions}`;
   } catch (error) {
     console.error('Fetch error:', error);
     weatherContainer.textContent = `${error.message}`; 
