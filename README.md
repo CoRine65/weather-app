@@ -55,3 +55,8 @@ NOTE: felt off and inaccurate,
 - keeping display clean and readable
 17. Adding some styling
 ----- commit ----------------------------
+- added a fade in transition
+18. More UI customizations
+- spinner
+- gradient based on temperature
+------ commit -------------------------
