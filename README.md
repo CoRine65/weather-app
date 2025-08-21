@@ -41,3 +41,11 @@ Goal of this lesson is to use asynchronous code to fetch and interact with APIs 
 [Testing]: FAILED
 [ERROR]: did not update the URL.
 NOTE: be more thorough in reading. 
+-------- commit-----------------
+
+15. Input validation
+- user can not submit empty strings
+- invalid cities
+NOTE: felt off and inaccurate, 
+- added: requre City, State and Country
+- display what the API is sending back
